@@ -8,9 +8,9 @@ A:  在Handler中,若当前call所属的collection的respondQueue只有一个元
     (call注册到Responder的选择器中逻辑尚未理清，为什么只在handler不能一次性发送response时才注册？)
 
 Q:  客户端collection的复用过程？
-    在同一个代理上多次调用同一个collectionID的不同方法时，若之前的call尚未返回，而后来的call又创建Socket对象，
+    在同一个代理上多次调用同一个CollectionId的不同方法时，若之前的call尚未返回，而后来的call又创建Socket对象，
     以及输入输出流，由于socket和输入输出流的覆盖，是否会导致之前在等待返回的call得不到返回值？
-A:  客户端中一个collection可对应多个call对象，即由于服务器的异步返回，可能同时存在多个call对象。
+A:  客户端中一个collection可管理多个call对象，由于服务器的异步返回，可能同时存在多个call对象。
     问题描述:
     由getConnection的实现代码:
     do {
@@ -23,14 +23,17 @@ A:  客户端中一个collection可对应多个call对象，即由于服务器�
           }
         } while (!connection.addCall(call));
         connection.setupIOstreams();
-    可知，若使用之前缓存的collection对象，仍然会在setupIOstreams中通过setupConnection调用创建新的Socket对象,如下:
+    可知，若使用之前缓存的collection对象，仍然会在setupIOstreams中通过setupConnection调用创建新的Socket对象,
+    如下:
     this.socket = socketFactory.createSocket();
     之后同服务器建立连接:
     NetUtils.connect(this.socket, server, 20000);
-    而后,通过新建的Socket获得输入输出流，向服务器写RPC头和连接头，等待发送Invocation,即要调用服务器中的方法和参数，在run函数中等待数据的获取。
+    而后,通过新建的Socket获得输入输出流，向服务器写RPC头和连接头，等待发送Invocation,即要调用服务器中的方法
+    和参数，在run函数中等待数据的获取。
     这样，后来的call的输入输出流覆盖了原来的输入输出流，是否可能导致原来的call得不到response？
     猜测:虽然建立了不同的Socket对象，但由于同一个collection有一样的CollectionId，即目的SocketAddress一样，
-    虽然原来输入输出流被覆盖了，输入输出流对象不一样，但最终的Socket输入输出流读取或写入的最终位置一样，就能获取response了。
+    虽然原来输入输出流被覆盖了，输入输出流对象不一样，但最终的Socket输入输出流读取或写入的最终位置一样，
+    原来的call就能获取response了。
     (   就算重新创建Socket对象和输入输出流也算了，但是在setupIOstreams又重新启动线程。如下:
         writeHeader();
         touch();
