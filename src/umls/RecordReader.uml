@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.mapreduce.lib.output.FileOutputFormat</OriginalElement>
+  <nodes>
+    <node x="198.0" y="273.0">org.apache.hadoop.mapreduce.lib.input.DelegatingRecordReader</node>
+    <node x="949.0" y="273.0">org.apache.hadoop.mapreduce.lib.db.DBRecordReader</node>
+    <node x="1116.0298245614035" y="354.0">org.apache.hadoop.mapreduce.lib.db.MySQLDBRecordReader</node>
+    <node x="798.0" y="273.0">org.apache.hadoop.mapreduce.lib.input.LineRecordReader</node>
+    <node x="1292.0" y="273.0">org.apache.hadoop.mapreduce.lib.input.SequenceFileAsTextRecordReader</node>
+    <node x="382.0" y="273.0">org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper.SubMapRecordReader</node>
+    <node x="888.2798245614035" y="0.0">java.lang.AutoCloseable</node>
+    <node x="1093.0" y="273.0">org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader</node>
+    <node x="888.2798245614035" y="162.0">org.apache.hadoop.mapreduce.RecordReader</node>
+    <node x="937.0298245614035" y="354.0">org.apache.hadoop.mapreduce.lib.db.OracleDBRecordReader</node>
+    <node x="21.0" y="354.0">org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter.FilterRecordReader</node>
+    <node x="900.7798245614035" y="81.0">java.io.Closeable</node>
+    <node x="1524.0" y="273.0">org.apache.hadoop.mapred.MapTask.NewTrackingRecordReader</node>
+    <node x="576.7842105263157" y="354.0">org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader</node>
+    <node x="1722.0" y="273.0">org.apache.hadoop.mapreduce.lib.input.CombineFileRecordReader</node>
+    <node x="604.0342105263157" y="435.0">org.apache.hadoop.mapreduce.lib.db.MySQLDataDrivenDBRecordReader</node>
+    <node x="0.0" y="273.0">org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader</node>
+    <node x="366.03421052631575" y="435.0">org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBRecordReader</node>
+    <node x="554.0" y="273.0">org.apache.hadoop.mapreduce.lib.input.SequenceFileAsBinaryInputFormat.SequenceFileAsBinaryRecordReader</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.LineRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="863.5" y="253.0" />
+      <point x="937.3298245614035" y="253.0" />
+      <point x="-5.4500000000000455" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.RecordReader" target="java.io.Closeable">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.CombineFileRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="1809.5" y="213.0" />
+      <point x="991.8298245614036" y="213.0" />
+      <point x="49.05000000000007" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader" target="org.apache.hadoop.mapreduce.lib.db.DBRecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="668.2842105263157" y="329.0" />
+      <point x="969.6666666666666" y="329.0" />
+      <point x="-41.33333333333337" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.SequenceFileAsBinaryInputFormat.SequenceFileAsBinaryRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="666.0" y="243.0" />
+      <point x="926.4298245614035" y="243.0" />
+      <point x="-16.350000000000023" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper.SubMapRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="5.6843418860808015E-14" y="-15.5" />
+      <point x="458.00000000000006" y="233.0" />
+      <point x="915.5298245614035" y="233.0" />
+      <point x="-27.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.DelegatingRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="280.0" y="223.0" />
+      <point x="904.6298245614036" y="223.0" />
+      <point x="-38.14999999999998" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.MySQLDBRecordReader" target="org.apache.hadoop.mapreduce.lib.db.DBRecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="1196.5298245614035" y="329.0" />
+      <point x="1052.3333333333333" y="329.0" />
+      <point x="41.33333333333326" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="1182.5" y="243.0" />
+      <point x="959.1298245614036" y="243.0" />
+      <point x="16.350000000000023" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.MySQLDataDrivenDBRecordReader" target="org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="45.75" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.SequenceFileAsTextRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="1398.0" y="233.0" />
+      <point x="970.0298245614035" y="233.0" />
+      <point x="27.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBRecordReader" target="org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="475.03421052631575" y="410.0" />
+      <point x="622.5342105263157" y="410.0" />
+      <point x="-45.75" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.OracleDBRecordReader" target="org.apache.hadoop.mapreduce.lib.db.DBRecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="1016.5298245614035" y="329.0" />
+      <point x="1011.0" y="329.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.DBRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="1011.0" y="253.0" />
+      <point x="948.2298245614036" y="253.0" />
+      <point x="5.4500000000000455" y="15.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.MapTask.NewTrackingRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="1613.0" y="223.0" />
+      <point x="980.9298245614036" y="223.0" />
+      <point x="38.15000000000009" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader" target="org.apache.hadoop.mapreduce.RecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="89.0" y="213.0" />
+      <point x="893.7298245614036" y="213.0" />
+      <point x="-49.049999999999955" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter.FilterRecordReader" target="org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.41017214397496105" x="781.0551999236218" y="649.0187021950981" />
+  <SelectedNodes>
+    <node>org.apache.hadoop.mapreduce.lib.input.LineRecordReader</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

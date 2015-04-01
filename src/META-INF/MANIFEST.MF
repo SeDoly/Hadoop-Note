@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: hadoop-core-1.2.1.jar
+Main-Class: com.xiaoyun.hadoop.HdfsTest
+

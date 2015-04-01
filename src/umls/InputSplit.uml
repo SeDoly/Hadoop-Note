@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.mapreduce.lib.output.FileOutputFormat</OriginalElement>
+  <nodes>
+    <node x="150.5" y="81.0">org.apache.hadoop.mapreduce.lib.input.CombineFileSplit</node>
+    <node x="531.5" y="81.0">org.apache.hadoop.mapred.FileSplit</node>
+    <node x="0.0" y="162.0">org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat.DataDrivenDBInputSplit</node>
+    <node x="312.0" y="0.0">org.apache.hadoop.mapreduce.InputSplit</node>
+    <node x="293.5" y="81.0">org.apache.hadoop.mapreduce.lib.input.TaggedInputSplit</node>
+    <node x="29.5" y="81.0">org.apache.hadoop.mapreduce.lib.db.DBInputFormat.DBInputSplit</node>
+    <node x="436.5" y="81.0">org.apache.hadoop.mapreduce.lib.input.FileSplit</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.FileSplit" target="org.apache.hadoop.mapreduce.InputSplit">
+      <point x="0.0" y="-15.5" />
+      <point x="474.0" y="61.0" />
+      <point x="372.2" y="61.0" />
+      <point x="17.19999999999999" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.FileSplit" target="org.apache.hadoop.mapreduce.InputSplit">
+      <point x="0.0" y="-15.5" />
+      <point x="569.0" y="51.0" />
+      <point x="389.4" y="51.0" />
+      <point x="34.39999999999998" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.CombineFileSplit" target="org.apache.hadoop.mapreduce.InputSplit">
+      <point x="0.0" y="-15.5" />
+      <point x="212.0" y="61.0" />
+      <point x="337.8" y="61.0" />
+      <point x="-17.19999999999999" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat.DataDrivenDBInputSplit" target="org.apache.hadoop.mapreduce.lib.db.DBInputFormat.DBInputSplit">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.TaggedInputSplit" target="org.apache.hadoop.mapreduce.InputSplit">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.DBInputFormat.DBInputSplit" target="org.apache.hadoop.mapreduce.InputSplit">
+      <point x="0.0" y="-15.5" />
+      <point x="80.0" y="51.0" />
+      <point x="320.6" y="51.0" />
+      <point x="-34.39999999999998" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="303.5" y="96.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

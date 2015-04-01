@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.mapreduce.lib.output.FileOutputFormat</OriginalElement>
+  <nodes>
+    <node x="490.0" y="81.0">org.apache.hadoop.mapreduce.lib.map.InverseMapper</node>
+    <node x="367.5" y="0.0">org.apache.hadoop.mapreduce.Mapper</node>
+    <node x="624.0" y="81.0">org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionMapper</node>
+    <node x="170.0" y="81.0">org.apache.hadoop.mapreduce.lib.map.TokenCounterMapper</node>
+    <node x="340.0" y="81.0">org.apache.hadoop.mapreduce.lib.input.DelegatingMapper</node>
+    <node x="0.0" y="81.0">org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.DelegatingMapper" target="org.apache.hadoop.mapreduce.Mapper">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.map.TokenCounterMapper" target="org.apache.hadoop.mapreduce.Mapper">
+      <point x="0.0" y="-15.5" />
+      <point x="245.0" y="61.0" />
+      <point x="390.0" y="61.0" />
+      <point x="-15.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper" target="org.apache.hadoop.mapreduce.Mapper">
+      <point x="0.0" y="-15.5" />
+      <point x="75.0" y="51.0" />
+      <point x="375.0" y="51.0" />
+      <point x="-30.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionMapper" target="org.apache.hadoop.mapreduce.Mapper">
+      <point x="0.0" y="-15.5" />
+      <point x="698.0" y="51.0" />
+      <point x="435.0" y="51.0" />
+      <point x="30.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.map.InverseMapper" target="org.apache.hadoop.mapreduce.Mapper">
+      <point x="0.0" y="-15.5" />
+      <point x="547.0" y="61.0" />
+      <point x="420.0" y="61.0" />
+      <point x="15.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="386.0" y="56.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

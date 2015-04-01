@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.mapreduce.lib.output.FileOutputFormat</OriginalElement>
+  <nodes>
+    <node x="346.125" y="81.0">org.apache.hadoop.mapreduce.lib.input.DelegatingInputFormat</node>
+    <node x="17.5" y="162.0">org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat</node>
+    <node x="471.625" y="243.0">org.apache.hadoop.mapreduce.lib.input.SequenceFileAsTextInputFormat</node>
+    <node x="373.625" y="0.0">org.apache.hadoop.mapreduce.InputFormat</node>
+    <node x="47.0" y="81.0">org.apache.hadoop.mapreduce.lib.db.DBInputFormat</node>
+    <node x="816.0" y="162.0">org.apache.hadoop.mapreduce.lib.input.NLineInputFormat</node>
+    <node x="672.0" y="162.0">org.apache.hadoop.mapreduce.lib.input.TextInputFormat</node>
+    <node x="696.625" y="243.0">org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter</node>
+    <node x="272.375" y="162.0">org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat</node>
+    <node x="969.0" y="162.0">org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat</node>
+    <node x="0.0" y="243.0">org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBInputFormat</node>
+    <node x="481.0" y="162.0">org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat</node>
+    <node x="234.625" y="243.0">org.apache.hadoop.mapreduce.lib.input.SequenceFileAsBinaryInputFormat</node>
+    <node x="681.625" y="81.0">org.apache.hadoop.mapreduce.lib.input.FileInputFormat</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.TextInputFormat" target="org.apache.hadoop.mapreduce.lib.input.FileInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="734.0" y="142.0" />
+      <point x="741.625" y="142.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.SequenceFileAsTextInputFormat" target="org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="574.125" y="218.0" />
+      <point x="566.5" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.DelegatingInputFormat" target="org.apache.hadoop.mapreduce.InputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.SequenceFileAsBinaryInputFormat" target="org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="343.125" y="218.0" />
+      <point x="509.5" y="218.0" />
+      <point x="-57.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat" target="org.apache.hadoop.mapreduce.lib.input.FileInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="566.5" y="142.0" />
+      <point x="717.625" y="142.0" />
+      <point x="-24.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter" target="org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="776.125" y="218.0" />
+      <point x="623.5" y="218.0" />
+      <point x="57.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat" target="org.apache.hadoop.mapreduce.lib.input.FileInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="356.375" y="132.0" />
+      <point x="693.625" y="132.0" />
+      <point x="-48.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat" target="org.apache.hadoop.mapreduce.lib.input.FileInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="1055.0" y="132.0" />
+      <point x="789.625" y="132.0" />
+      <point x="48.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat" target="org.apache.hadoop.mapreduce.lib.db.DBInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.NLineInputFormat" target="org.apache.hadoop.mapreduce.lib.input.FileInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="882.5" y="142.0" />
+      <point x="765.625" y="142.0" />
+      <point x="24.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.input.FileInputFormat" target="org.apache.hadoop.mapreduce.InputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="741.625" y="56.0" />
+      <point x="458.625" y="56.0" />
+      <point x="34.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.DBInputFormat" target="org.apache.hadoop.mapreduce.InputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="105.5" y="56.0" />
+      <point x="390.625" y="56.0" />
+      <point x="-34.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBInputFormat" target="org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8423772609819121" x="596.5" y="137.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

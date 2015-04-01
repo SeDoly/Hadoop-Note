@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.mapreduce.RecordWriter</OriginalElement>
+  <nodes>
+    <node x="1364.0" y="101.0">org.apache.hadoop.mapreduce.lib.db.DBOutputFormat.DBRecordWriter</node>
+    <node x="828.0" y="101.0">org.apache.hadoop.mapred.MapTask.NewDirectOutputCollector</node>
+    <node x="0.0" y="101.0">org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat.FilterRecordWriter</node>
+    <node x="668.0" y="0.0">org.apache.hadoop.mapreduce.RecordWriter</node>
+    <node x="2.0" y="182.0">org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat.LazyRecordWriter</node>
+    <node x="153.0" y="101.0">org.apache.hadoop.mapreduce.lib.output.TextOutputFormat.LineRecordWriter</node>
+    <node x="1024.0" y="101.0">org.apache.hadoop.mapred.Task.NewCombinerRunner.OutputConverter</node>
+    <node x="1169.0" y="101.0">org.apache.hadoop.mapred.ReduceTask.NewTrackingRecordWriter</node>
+    <node x="465.0" y="101.0">org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper.SubMapRecordWriter</node>
+    <node x="634.0" y="101.0">org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.RecordWriterWithCounter</node>
+    <node x="301.0" y="101.0">org.apache.hadoop.mapred.MapTask.NewOutputCollector</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.DBOutputFormat.DBRecordWriter" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="1424.5" y="51.0" />
+      <point x="768.1111111111111" y="51.0" />
+      <point x="47.111111111111086" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.MapTask.NewDirectOutputCollector" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="916.0" y="81.0" />
+      <point x="732.7777777777778" y="81.0" />
+      <point x="11.777777777777828" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.RecordWriterWithCounter" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.MapTask.NewOutputCollector" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="373.0" y="71.0" />
+      <point x="697.4444444444445" y="71.0" />
+      <point x="-23.555555555555543" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper.SubMapRecordWriter" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="539.5" y="81.0" />
+      <point x="709.2222222222222" y="81.0" />
+      <point x="-11.777777777777828" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat.FilterRecordWriter" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="66.5" y="51.0" />
+      <point x="673.8888888888889" y="51.0" />
+      <point x="-47.111111111111086" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.ReduceTask.NewTrackingRecordWriter" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="1256.5" y="61.0" />
+      <point x="756.3333333333333" y="61.0" />
+      <point x="35.33333333333326" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat.LazyRecordWriter" target="org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat.FilterRecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.TextOutputFormat.LineRecordWriter" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="217.0" y="61.0" />
+      <point x="685.6666666666666" y="61.0" />
+      <point x="-35.33333333333337" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.Task.NewCombinerRunner.OutputConverter" target="org.apache.hadoop.mapreduce.RecordWriter">
+      <point x="0.0" y="-15.5" />
+      <point x="1086.5" y="71.0" />
+      <point x="744.5555555555555" y="71.0" />
+      <point x="23.555555555555543" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6498338870431892" x="739.6268346693269" y="107.11567828514416" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

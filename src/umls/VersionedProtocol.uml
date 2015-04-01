@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.ipc.VersionedProtocol</OriginalElement>
+  <nodes>
+    <node x="1318.5" y="202.0">org.apache.hadoop.mapred.LocalJobRunner</node>
+    <node x="289.0" y="111.0">org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol</node>
+    <node x="1784.6166666666668" y="202.0">org.apache.hadoop.hdfs.server.datanode.DataNode</node>
+    <node x="1665.25" y="111.0">org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol</node>
+    <node x="440.0" y="111.0">org.apache.hadoop.security.RefreshUserMappingsProtocol</node>
+    <node x="655.0" y="111.0">org.apache.hadoop.security.authorize.RefreshAuthorizationPolicyProtocol</node>
+    <node x="1842.25" y="111.0">org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol</node>
+    <node x="0.0" y="111.0">org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol</node>
+    <node x="1573.5" y="202.0">org.apache.hadoop.mapred.IsolationRunner.FakeUmbilical</node>
+    <node x="899.0" y="111.0">org.apache.hadoop.mapred.InterTrackerProtocol</node>
+    <node x="159.0" y="111.0">org.apache.hadoop.hdfs.protocol.ClientProtocol</node>
+    <node x="1065.0" y="111.0">org.apache.hadoop.mapred.AdminOperationsProtocol</node>
+    <node x="905.5" y="0.0">org.apache.hadoop.ipc.VersionedProtocol</node>
+    <node x="1489.75" y="111.0">org.apache.hadoop.mapred.TaskUmbilicalProtocol</node>
+    <node x="921.3666666666668" y="202.0">org.apache.hadoop.mapred.JobTracker</node>
+    <node x="1456.5" y="202.0">org.apache.hadoop.mapred.TaskTracker</node>
+    <node x="301.8666666666668" y="202.0">org.apache.hadoop.hdfs.server.namenode.NameNode</node>
+    <node x="1259.0" y="111.0">org.apache.hadoop.mapred.JobSubmissionProtocol</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapred.JobTracker" target="org.apache.hadoop.security.authorize.RefreshAuthorizationPolicyProtocol">
+      <point x="-18.199999999999818" y="-15.5" />
+      <point x="948.666666666667" y="162.0" />
+      <point x="823.0" y="162.0" />
+      <point x="56.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.LocalJobRunner" target="org.apache.hadoop.mapred.JobSubmissionProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="39.5" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.security.RefreshUserMappingsProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="537.5" y="81.0" />
+      <point x="947.818181818182" y="81.0" />
+      <point x="-24.181818181818016" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.namenode.NameNode" target="org.apache.hadoop.security.authorize.RefreshAuthorizationPolicyProtocol">
+      <point x="38.0" y="-15.5" />
+      <point x="387.3666666666668" y="182.0" />
+      <point x="711.0" y="182.0" />
+      <point x="-56.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.namenode.NameNode" target="org.apache.hadoop.security.RefreshUserMappingsProtocol">
+      <point x="19.0" y="-15.5" />
+      <point x="368.3666666666668" y="172.0" />
+      <point x="488.75" y="172.0" />
+      <point x="-48.75" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.JobTracker" target="org.apache.hadoop.security.RefreshUserMappingsProtocol">
+      <point x="-36.399999999999636" y="-15.5" />
+      <point x="930.4666666666672" y="172.0" />
+      <point x="586.25" y="172.0" />
+      <point x="48.75" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.JobTracker" target="org.apache.hadoop.mapred.InterTrackerProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="966.8666666666668" y="182.0" />
+      <point x="972.0" y="182.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.JobSubmissionProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="1338.0" y="81.0" />
+      <point x="996.181818181818" y="81.0" />
+      <point x="24.181818181818016" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.namenode.NameNode" target="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="349.3666666666668" y="182.0" />
+      <point x="354.5" y="182.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="1743.75" y="61.0" />
+      <point x="1020.363636363636" y="61.0" />
+      <point x="48.36363636363603" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.security.authorize.RefreshAuthorizationPolicyProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="767.0" y="91.0" />
+      <point x="959.909090909091" y="91.0" />
+      <point x="-12.090909090909008" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.IsolationRunner.FakeUmbilical" target="org.apache.hadoop.mapred.TaskUmbilicalProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="1627.5" y="182.0" />
+      <point x="1604.5" y="182.0" />
+      <point x="38.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.namenode.NameNode" target="org.apache.hadoop.hdfs.protocol.ClientProtocol">
+      <point x="-19.0" y="-15.5" />
+      <point x="330.3666666666668" y="172.0" />
+      <point x="214.0" y="172.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.datanode.DataNode" target="org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol">
+      <point x="-21.75" y="-15.5" />
+      <point x="1806.3666666666668" y="182.0" />
+      <point x="1743.75" y="182.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.AdminOperationsProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="1152.0" y="91.0" />
+      <point x="984.090909090909" y="91.0" />
+      <point x="12.090909090909008" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.namenode.NameNode" target="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol">
+      <point x="-38.0" y="-15.5" />
+      <point x="311.3666666666668" y="182.0" />
+      <point x="69.5" y="182.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.JobTracker" target="org.apache.hadoop.mapred.JobSubmissionProtocol">
+      <point x="36.399999999999636" y="-15.5" />
+      <point x="1003.2666666666664" y="182.0" />
+      <point x="1298.5" y="182.0" />
+      <point x="-39.5" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="1922.75" y="51.0" />
+      <point x="1032.454545454545" y="51.0" />
+      <point x="60.45454545454504" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.TaskUmbilicalProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="1566.25" y="71.0" />
+      <point x="1008.272727272727" y="71.0" />
+      <point x="36.272727272727025" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.protocol.ClientProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="214.0" y="61.0" />
+      <point x="923.636363636364" y="61.0" />
+      <point x="-48.36363636363603" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="354.5" y="71.0" />
+      <point x="935.727272727273" y="71.0" />
+      <point x="-36.272727272727025" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.JobTracker" target="org.apache.hadoop.mapred.AdminOperationsProtocol">
+      <point x="18.199999999999818" y="-15.5" />
+      <point x="985.0666666666666" y="172.0" />
+      <point x="1152.0" y="172.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.datanode.DataNode" target="org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol">
+      <point x="21.75" y="-15.5" />
+      <point x="1849.8666666666668" y="182.0" />
+      <point x="1922.75" y="182.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.TaskTracker" target="org.apache.hadoop.mapred.TaskUmbilicalProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="1505.0" y="182.0" />
+      <point x="1528.0" y="182.0" />
+      <point x="-38.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="69.5" y="51.0" />
+      <point x="911.545454545455" y="51.0" />
+      <point x="-60.45454545454504" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.InterTrackerProtocol" target="org.apache.hadoop.ipc.VersionedProtocol">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.525691699604743" x="1002.0000000000001" y="116.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

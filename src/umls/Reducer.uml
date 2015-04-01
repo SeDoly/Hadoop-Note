@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.mapreduce.lib.output.FileOutputFormat</OriginalElement>
+  <nodes>
+    <node x="148.0" y="81.0">org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer</node>
+    <node x="285.0" y="81.0">org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionReducer</node>
+    <node x="167.5" y="0.0">org.apache.hadoop.mapreduce.Reducer</node>
+    <node x="0.0" y="81.0">org.apache.hadoop.mapreduce.lib.reduce.LongSumReducer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapreduce.lib.reduce.LongSumReducer" target="org.apache.hadoop.mapreduce.Reducer">
+      <point x="0.0" y="-15.5" />
+      <point x="64.0" y="56.0" />
+      <point x="180.5" y="56.0" />
+      <point x="-26.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionReducer" target="org.apache.hadoop.mapreduce.Reducer">
+      <point x="0.0" y="-15.5" />
+      <point x="360.5" y="56.0" />
+      <point x="232.5" y="56.0" />
+      <point x="26.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer" target="org.apache.hadoop.mapreduce.Reducer">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="218.0" y="56.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

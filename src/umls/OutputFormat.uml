@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.mapreduce.OutputFormat</OriginalElement>
+  <nodes>
+    <node x="0.0" y="81.0">org.apache.hadoop.mapreduce.lib.output.NullOutputFormat</node>
+    <node x="153.0" y="81.0">org.apache.hadoop.mapreduce.lib.output.FileOutputFormat</node>
+    <node x="215.80555555555557" y="162.0">org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat</node>
+    <node x="413.80555555555566" y="81.0">org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat</node>
+    <node x="192.80555555555557" y="243.0">org.apache.hadoop.mapreduce.lib.output.SequenceFileAsBinaryOutputFormat</node>
+    <node x="415.80555555555554" y="162.0">org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat</node>
+    <node x="571.8055555555557" y="81.0">org.apache.hadoop.mapreduce.lib.db.DBOutputFormat</node>
+    <node x="62.80555555555554" y="162.0">org.apache.hadoop.mapreduce.lib.output.TextOutputFormat</node>
+    <node x="266.6805555555556" y="0.0">org.apache.hadoop.mapreduce.OutputFormat</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat" target="org.apache.hadoop.mapreduce.lib.output.FileOutputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="305.80555555555554" y="137.0" />
+      <point x="249.75" y="137.0" />
+      <point x="32.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.TextOutputFormat" target="org.apache.hadoop.mapreduce.lib.output.FileOutputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="129.30555555555554" y="137.0" />
+      <point x="185.25" y="137.0" />
+      <point x="-32.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat" target="org.apache.hadoop.mapreduce.OutputFormat">
+      <point x="5.6843418860808015E-14" y="-15.5" />
+      <point x="482.80555555555566" y="61.0" />
+      <point x="336.0555555555556" y="61.0" />
+      <point x="13.875" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.NullOutputFormat" target="org.apache.hadoop.mapreduce.OutputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="66.5" y="51.0" />
+      <point x="280.5555555555556" y="51.0" />
+      <point x="-41.625" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.SequenceFileAsBinaryOutputFormat" target="org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.FileOutputFormat" target="org.apache.hadoop.mapreduce.OutputFormat">
+      <point x="-2.8421709430404007E-14" y="-15.5" />
+      <point x="217.49999999999997" y="61.0" />
+      <point x="308.3055555555556" y="61.0" />
+      <point x="-13.875" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.db.DBOutputFormat" target="org.apache.hadoop.mapreduce.OutputFormat">
+      <point x="0.0" y="-15.5" />
+      <point x="634.8055555555557" y="51.0" />
+      <point x="363.8055555555556" y="51.0" />
+      <point x="41.625" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat" target="org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat">
+      <point x="5.6843418860808015E-14" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="349.0" y="125.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

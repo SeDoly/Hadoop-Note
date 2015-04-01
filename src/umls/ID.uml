@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.hadoop.mapreduce.TaskID</OriginalElement>
+  <nodes>
+    <node x="88.99999999999999" y="324.0">org.apache.hadoop.mapreduce.TaskAttemptID</node>
+    <node x="0.0" y="324.0">org.apache.hadoop.mapreduce.TaskID</node>
+    <node x="72.99999999999997" y="81.0">org.apache.hadoop.io.WritableComparable</node>
+    <node x="194.0" y="0.0">java.lang.Comparable</node>
+    <node x="121.99999999999997" y="243.0">org.apache.hadoop.mapred.ID</node>
+    <node x="69.49999999999997" y="0.0">org.apache.hadoop.io.Writable</node>
+    <node x="0.0" y="405.0">org.apache.hadoop.mapred.TaskID</node>
+    <node x="88.99999999999999" y="405.0">org.apache.hadoop.mapred.TaskAttemptID</node>
+    <node x="121.99999999999997" y="162.0">org.apache.hadoop.mapreduce.ID</node>
+    <node x="221.0" y="405.0">org.apache.hadoop.mapred.JobID</node>
+    <node x="221.0" y="324.0">org.apache.hadoop.mapreduce.JobID</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.hadoop.mapred.ID" target="org.apache.hadoop.mapreduce.ID">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.TaskID" target="org.apache.hadoop.mapreduce.TaskID">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.JobID" target="org.apache.hadoop.mapred.ID">
+      <point x="-15.75" y="-15.5" />
+      <point x="236.75" y="299.0" />
+      <point x="160.33333333333331" y="299.0" />
+      <point x="15.333333333333343" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.JobID" target="org.apache.hadoop.mapreduce.JobID">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.ID" target="org.apache.hadoop.io.WritableComparable">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.TaskID" target="org.apache.hadoop.mapred.ID">
+      <point x="0.0" y="-15.5" />
+      <point x="34.5" y="299.0" />
+      <point x="129.66666666666663" y="299.0" />
+      <point x="-15.333333333333343" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.io.WritableComparable" target="org.apache.hadoop.io.Writable">
+      <point x="-36.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.JobID" target="java.lang.Comparable">
+      <point x="15.75" y="-15.5" />
+      <point x="24.75" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapreduce.TaskAttemptID" target="org.apache.hadoop.mapred.ID">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.mapred.TaskAttemptID" target="org.apache.hadoop.mapreduce.TaskAttemptID">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.hadoop.io.WritableComparable" target="java.lang.Comparable">
+      <point x="36.0" y="-15.5" />
+      <point x="180.99999999999997" y="56.0" />
+      <point x="218.75" y="56.0" />
+      <point x="-24.75" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="99.0" y="258.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
